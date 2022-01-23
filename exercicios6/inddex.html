@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="outro.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
+    <title>Criptografando</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+
+            <nav>
+                <h1>Criptografando</h1>   
+            </nav>
+        </div>
+    </header>
+
+
+    <div>
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+    </div>
+
+    <main>
+        <h1>Criptografando</h1>
+        <p>Vamos utilizar esse programinha para codificar o que for<br>
+            na caixa abaixo. Voce pode escolher entre a <b>Cifra de Cesar</b><br>
+            que é uma das mais simples formas de codificação e que foi utilizada por Julio Cesar<br>
+            no Imperio Romano.Ou se preferir, nós podemos te dar o resultado em <b>Base 64</b>
+            base essa que é uma forma de criptografar dados, utilizada inclusive na URL de seu computador<br>
+            Escolha qual abaixo quer utilizar:    
+        </p>
+        <fieldset>
+            <select id="selecao" name="escolhas">
+                <outgroup label="faça sua escolha">
+                    <option value="selecione">Clique para selecionar</option>
+                    <option value="Cesar" id="Cesar">Cifra de Cesar</option>
+                    <option value="base64" id="Cesar">Base 64</option>
+                </outgroup>
+            </select>
+        </fieldset>
+        <!--Iput para dixer qual numero sera incrementado na base de Cesar-->
+        <div id="entradaCesar">
+            <label for="inputCesar">Quantas casas iremos pular?</label>
+            <br>
+            <input id="numeroEntradaCesar" type="number" value="1">
+        </div>
+        <p>E o que voce quer fazer????</p>
+        <label for="inputbase64">Quantas casas iremos pular?</label>
+            <br>
+            <input id="numerobase64" type="number" value="1">
+            <button id="escolhas" onclick="btnDecodificar"><h1>Escolha</h1></button>
+            <button id="escolhas" onclick="btnCodificar"><h1>Escolha</h1></button>            
+
+    </main>
+    <section>
+        <label><input type="radio" name="cod" id="codificar" checked>Codificar</label>
+        
+        <label for="decodificar"><input type="radio" name="cod" id="decodificar">Decodificar</label>
+        </section>
+        
+        <input type="submit" value="Resultado" id="verificar">
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

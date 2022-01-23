@@ -1,0 +1,34 @@
+header h1{
+	background: #7e459b;
+    color: white;
+	padding: 20px 0;
+	font-size: 1rem;
+}
+
+.caixa {
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+    display: inline-block;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav h1:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+nav h1:active {
+	color: #088C19;
+}
+#canvas1 {
+	border: 1px solid black ;
+}
+#canvas2 {
+	border: 1px solid black ;
+}
